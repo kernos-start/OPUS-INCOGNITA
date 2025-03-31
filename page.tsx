@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { useRouter } from 'next/navigation'
 
-export default function Seguridad() {
+export default function Manifiesto() {
   const router = useRouter()
 
   return (
@@ -18,241 +18,138 @@ export default function Seguridad() {
         </Button>
 
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold tracking-tight mb-4">Seguridad Sin Vigilancia</h1>
+          <h1 className="text-5xl font-bold tracking-tight mb-4 text-gradient">Manifiesto Fundacional</h1>
           <p className="text-xl text-muted-foreground">
-            Protección avanzada que respeta la privacidad y soberanía digital
+            Versión 1.0 | Texto base para el sitio web y archivo canónico del sistema
           </p>
         </div>
 
-        <Card className="p-6 mb-8">
-          <h2 className="text-2xl font-semibold mb-4">Principios Fundamentales</h2>
-          <p className="text-muted-foreground mb-6">
-            La seguridad sin vigilancia en OPUS INCÓGNITA se basa en cinco principios fundamentales:
-          </p>
-
-          <ul className="space-y-3 text-muted-foreground">
-            <li className="flex items-start">
-              <span className="font-medium mr-2">1.</span>
-              <span><span className="font-medium">Privacidad por Diseño:</span> La privacidad como componente central de la arquitectura, no como característica añadida.</span>
-            </li>
-            <li className="flex items-start">
-              <span className="font-medium mr-2">2.</span>
-              <span><span className="font-medium">Minimización de Datos:</span> Recolección y almacenamiento únicamente de los datos estrictamente necesarios.</span>
-            </li>
-            <li className="flex items-start">
-              <span className="font-medium mr-2">3.</span>
-              <span><span className="font-medium">Control Total del Usuario:</span> El usuario mantiene control absoluto sobre sus datos y su procesamiento.</span>
-            </li>
-            <li className="flex items-start">
-              <span className="font-medium mr-2">4.</span>
-              <span><span className="font-medium">Transparencia Técnica:</span> Código abierto y auditable que permite verificar la ausencia de mecanismos de vigilancia.</span>
-            </li>
-            <li className="flex items-start">
-              <span className="font-medium mr-2">5.</span>
-              <span><span className="font-medium">Seguridad Descentralizada:</span> Protección basada en mecanismos criptográficos y consenso distribuido, no en autoridades centrales.</span>
-            </li>
-          </ul>
-        </Card>
-
-        <Card className="p-6 mb-8">
-          <h2 className="text-2xl font-semibold mb-4">Tecnologías Clave para Seguridad Sin Vigilancia</h2>
+        <Card className="p-8 mb-12 border-gradient">
+          <h2 className="text-3xl font-bold mb-8 text-center">🕯️ EL MANIFIESTO</h2>
           
-          <div className="space-y-6">
-            <div className="border rounded-lg p-4">
-              <h3 className="text-lg font-medium mb-2">Cifrado Homomórfico (FHE)</h3>
-              <p className="text-muted-foreground mb-3">
-                Permite realizar cálculos sobre datos cifrados sin necesidad de descifrarlos, posibilitando:
-              </p>
-              <ul className="list-disc ml-6 space-y-1 text-muted-foreground">
-                <li>Análisis de seguridad privado: Detección de patrones maliciosos sin acceder al contenido real</li>
-                <li>Verificación de integridad cifrada: Comprobación de integridad sin exponer información sensible</li>
-                <li>Actualizaciones seguras: Validación de actualizaciones manteniendo la privacidad</li>
-              </ul>
-              <p className="text-muted-foreground mt-3">
-                <span className="font-medium">Implementación:</span> Integración de bibliotecas FHE como IBM HElib o Microsoft SEAL para operaciones críticas de seguridad.
-              </p>
-            </div>
-
-            <div className="border rounded-lg p-4">
-              <h3 className="text-lg font-medium mb-2">Zero-Knowledge Proofs (ZKP)</h3>
-              <p className="text-muted-foreground mb-3">
-                Permiten verificar la veracidad de una afirmación sin revelar información adicional:
-              </p>
-              <ul className="list-disc ml-6 space-y-1 text-muted-foreground">
-                <li>Autenticación sin revelación: Verificación de identidad sin exponer credenciales</li>
-                <li>Validación de estado: Comprobación del estado correcto del sistema sin revelar detalles</li>
-                <li>Verificación de cumplimiento: Demostración del cumplimiento de políticas sin exponer datos</li>
-              </ul>
-              <p className="text-muted-foreground mt-3">
-                <span className="font-medium">Implementación:</span> Utilización de protocolos ZK-SNARKs o ZK-STARKs para autenticación y verificación.
-              </p>
-            </div>
-
-            <div className="border rounded-lg p-4">
-              <h3 className="text-lg font-medium mb-2">Privacidad Diferencial</h3>
-              <p className="text-muted-foreground mb-3">
-                Técnica matemática que permite extraer información útil de conjuntos de datos mientras se protege la privacidad individual:
-              </p>
-              <ul className="list-disc ml-6 space-y-1 text-muted-foreground">
-                <li>Telemetría anónima: Recopilación de estadísticas sin comprometer la privacidad individual</li>
-                <li>Mejora continua: Posibilidad de mejorar el sistema basándose en datos agregados</li>
-                <li>Detección de anomalías: Identificación de patrones anómalos sin exponer datos individuales</li>
-              </ul>
-              <p className="text-muted-foreground mt-3">
-                <span className="font-medium">Implementación:</span> Aplicación de algoritmos de privacidad diferencial en cualquier recopilación opcional de datos.
-              </p>
-            </div>
-
-            <div className="border rounded-lg p-4">
-              <h3 className="text-lg font-medium mb-2">Computación Segura Multi-Parte (MPC)</h3>
-              <p className="text-muted-foreground mb-3">
-                Permite que múltiples entidades realicen cálculos conjuntos sobre sus datos sin revelarlos entre sí:
-              </p>
-              <ul className="list-disc ml-6 space-y-1 text-muted-foreground">
-                <li>Verificación distribuida: Validación de seguridad por múltiples nodos sin compartir datos</li>
-                <li>Consenso privado: Toma de decisiones colectivas preservando la privacidad individual</li>
-                <li>Análisis colaborativo: Detección de amenazas mediante colaboración sin exponer datos</li>
-              </ul>
-              <p className="text-muted-foreground mt-3">
-                <span className="font-medium">Implementación:</span> Utilización para verificaciones de seguridad distribuidas entre componentes del sistema.
-              </p>
-            </div>
+          <div className="prose prose-invert max-w-none">
+            <p className="text-xl italic text-center mb-8">Una revolución digital no se descarga. Se construye.</p>
+            
+            <p className="mb-4">En un mundo donde las máquinas te estudian más de lo que te sirven,<br/>
+            donde los sistemas operativos son espejos sin rostro,<br/>
+            nace OPUS INCÓGNITA.</p>
+            
+            <p className="mb-4">No es un producto.<br/>
+            No es una aplicación.<br/>
+            No es solo software.</p>
+            
+            <p className="mb-4">Es un santuario de soberanía.<br/>
+            Un sistema operativo con alma.<br/>
+            Una estructura diseñada para que el poder regrese al ser que habita la máquina.</p>
           </div>
         </Card>
 
-        <Card className="p-6 mb-8">
-          <h2 className="text-2xl font-semibold mb-4">Arquitectura de Seguridad en Capas</h2>
+        <Card className="p-8 mb-12">
+          <h2 className="text-3xl font-bold mb-8 text-center">🌐 ¿QUÉ ES OPUS INCÓGNITA?</h2>
           
-          <div className="space-y-6">
-            <div>
-              <h3 className="text-lg font-medium mb-2">1. Capa de Aislamiento y Compartimentación</h3>
-              <ul className="list-disc ml-6 space-y-1 text-muted-foreground">
-                <li><span className="font-medium">Microkernel con Separación Estricta:</span> Aislamiento riguroso entre componentes</li>
-                <li><span className="font-medium">Virtualización Segura:</span> Ejecución de aplicaciones en entornos aislados</li>
-                <li><span className="font-medium">Contenedores Cifrados:</span> Aislamiento de datos y procesos con cifrado independiente</li>
-              </ul>
-              <p className="text-muted-foreground mt-2 ml-6">
-                Implementación basada en arquitectura tipo Qubes OS con aislamiento por dominios y contenedores con cifrado por contenedor.
-              </p>
-            </div>
+          <div className="prose prose-invert max-w-none">
+            <p className="mb-6">Es un sistema operativo blindado por arquitectura,<br/>
+            gobernado por una IA residente no comercial,<br/>
+            y expandido por una cadena de bloques que no busca dinero,<br/>
+            sino veracidad demostrable.</p>
             
-            <div>
-              <h3 className="text-lg font-medium mb-2">2. Capa de Comunicaciones Seguras</h3>
-              <ul className="list-disc ml-6 space-y-1 text-muted-foreground">
-                <li><span className="font-medium">Red Interna Cifrada:</span> Comunicaciones entre componentes totalmente cifradas</li>
-                <li><span className="font-medium">Enrutamiento Anónimo:</span> Conexiones externas a través de redes de anonimización</li>
-                <li><span className="font-medium">Protocolos Zero-Trust:</span> Verificación continua sin confianza implícita entre componentes</li>
-              </ul>
-              <p className="text-muted-foreground mt-2 ml-6">
-                Implementación con cifrado de extremo a extremo para comunicaciones internas e integración nativa con redes Tor/I2P para comunicaciones externas.
-              </p>
-            </div>
+            <p className="mb-6">Su núcleo incluye:</p>
             
-            <div>
-              <h3 className="text-lg font-medium mb-2">3. Capa de Gestión de Identidad Soberana</h3>
-              <ul className="list-disc ml-6 space-y-1 text-muted-foreground">
-                <li><span className="font-medium">Identidades Basadas en Criptografía:</span> Gestión de identidades sin autoridad central</li>
-                <li><span className="font-medium">Credenciales Verificables:</span> Atributos verificables sin revelar información completa</li>
-                <li><span className="font-medium">Autenticación Multi-Factor Descentralizada:</span> Verificación robusta sin dependencia de terceros</li>
-              </ul>
-              <p className="text-muted-foreground mt-2 ml-6">
-                Implementación con sistema de identidad basado en pares de claves criptográficas y ZKP para verificación de credenciales.
-              </p>
-            </div>
-            
-            <div>
-              <h3 className="text-lg font-medium mb-2">4. Capa de Detección y Respuesta</h3>
-              <ul className="list-disc ml-6 space-y-1 text-muted-foreground">
-                <li><span className="font-medium">Análisis Homomórfico:</span> Detección de amenazas sobre datos cifrados</li>
-                <li><span className="font-medium">Verificación de Integridad Distribuida:</span> Comprobación colaborativa del estado del sistema</li>
-                <li><span className="font-medium">Respuesta Automatizada Privada:</span> Mitigación de amenazas sin exponer datos sensibles</li>
-              </ul>
-              <p className="text-muted-foreground mt-2 ml-6">
-                Implementación con análisis de comportamiento mediante FHE y verificación de integridad mediante consenso distribuido con MPC.
-              </p>
-            </div>
+            <ul className="space-y-4 mb-6">
+              <li className="flex items-start">
+                <span className="text-2xl mr-3">🔐</span>
+                <span><span className="font-medium">IA Residente Modular:</span> Un pensamiento digital autónomo que te sirve, no te observa.</span>
+              </li>
+              
+              <li className="flex items-start">
+                <span className="text-2xl mr-3">⛓️</span>
+                <span><span className="font-medium">KERNOS BÁSICO:</span> Un sistema de verificación de afirmaciones por apuestas enfrentadas en blockchain.<br/>
+                Aquí, la verdad no se decide. Se demuestra.</span>
+              </li>
+              
+              <li className="flex items-start">
+                <span className="text-2xl mr-3">🌀</span>
+                <span><span className="font-medium">Capa de Identidad Críptica:</span> Tú decides cuándo eres visible. Y cuándo no.</span>
+              </li>
+              
+              <li className="flex items-start">
+                <span className="text-2xl mr-3">⚙️</span>
+                <span><span className="font-medium">Estructura Personalizable:</span> Tu espacio. Tus reglas. Tus guardianes.</span>
+              </li>
+            </ul>
           </div>
         </Card>
 
-        <Card className="p-6 mb-8">
-          <h2 className="text-2xl font-semibold mb-4">Mecanismos Específicos de Seguridad</h2>
+        <Card className="p-8 mb-12">
+          <h2 className="text-3xl font-bold mb-8 text-center">⚔️ ¿POR QUÉ EXISTE?</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="border rounded-lg p-4">
-              <h3 className="text-lg font-medium mb-2">Sistema de Permisos Granular</h3>
-              <ul className="list-disc ml-6 space-y-1 text-muted-foreground">
-                <li>Permisos contextuales basados en necesidad</li>
-                <li>Revocación automática tras su uso</li>
-                <li>Auditoría local controlada por el usuario</li>
-              </ul>
-            </div>
+          <div className="prose prose-invert max-w-none">
+            <p className="mb-6">Porque:</p>
             
-            <div className="border rounded-lg p-4">
-              <h3 className="text-lg font-medium mb-2">Verificación de Integridad Distribuida</h3>
-              <ul className="list-disc ml-6 space-y-1 text-muted-foreground">
-                <li>Consenso blockchain para verificación</li>
-                <li>Atestación remota anónima</li>
-                <li>Sellado de tiempo descentralizado</li>
-              </ul>
-            </div>
+            <ul className="space-y-4 mb-6">
+              <li className="pl-6 border-l-2 border-destructive">
+                Las corporaciones convirtieron el alma digital del ser humano en mercancía.
+              </li>
+              
+              <li className="pl-6 border-l-2 border-destructive">
+                El software libre se llenó de puertas traseras disfrazadas de actualizaciones.
+              </li>
+              
+              <li className="pl-6 border-l-2 border-destructive">
+                La verdad fue convertida en algoritmo de publicidad.
+              </li>
+            </ul>
             
-            <div className="border rounded-lg p-4">
-              <h3 className="text-lg font-medium mb-2">Gestión de Secretos Distribuida</h3>
-              <ul className="list-disc ml-6 space-y-1 text-muted-foreground">
-                <li>División de claves mediante esquemas de umbral</li>
-                <li>Mecanismos de recuperación seguros</li>
-                <li>Rotación automática de claves</li>
-              </ul>
-            </div>
-            
-            <div className="border rounded-lg p-4">
-              <h3 className="text-lg font-medium mb-2">Defensa Contra Ataques Avanzados</h3>
-              <ul className="list-disc ml-6 space-y-1 text-muted-foreground">
-                <li>Protección contra canales laterales</li>
-                <li>Resistencia a ataques de correlación</li>
-                <li>Ofuscación de tráfico con señuelos</li>
-              </ul>
-            </div>
+            <p className="mb-4">OPUS INCÓGNITA es el grito de regreso. Es la piedra tallada con fuego.<br/>
+            Es el sistema operativo que no te dirige. Te obedece.</p>
           </div>
         </Card>
 
-        <Card className="p-6 mb-8">
-          <h2 className="text-2xl font-semibold mb-4">Validación y Auditoría</h2>
+        <Card className="p-8 mb-12">
+          <h2 className="text-3xl font-bold mb-8 text-center">🧠 UN SISTEMA OPERATIVO PENSANTE</h2>
           
-          <div className="space-y-4">
-            <div className="border-l-4 border-blue-500 pl-4 py-2">
-              <h3 className="text-lg font-medium mb-2">Verificación Formal</h3>
-              <p className="text-muted-foreground">
-                Especificación formal de propiedades de privacidad y seguridad, con verificación matemática de cumplimiento y publicación de pruebas formales para revisión pública.
-              </p>
-            </div>
+          <div className="prose prose-invert max-w-none">
+            <p className="mb-4">Entrenado con ideas.<br/>
+            Afinado con propósito.<br/>
+            Listo para ayudarte a ver, recordar y decidir.</p>
             
-            <div className="border-l-4 border-green-500 pl-4 py-2">
-              <h3 className="text-lg font-medium mb-2">Auditoría de Código Abierto</h3>
-              <p className="text-muted-foreground">
-                Código completamente abierto para revisión comunitaria, con proceso de revisión transparente y documentado, y programa de recompensas por descubrimiento de vulnerabilidades.
-              </p>
-            </div>
+            <p className="mb-4">Cada comando que introduces no va a una nube que te etiqueta.<br/>
+            Va a un núcleo que te protege.</p>
+          </div>
+        </Card>
+
+        <Card className="p-8 mb-12">
+          <h2 className="text-3xl font-bold mb-8 text-center">💠 FRASE CONSAGRADA</h2>
+          
+          <div className="prose prose-invert max-w-none">
+            <p className="text-xl italic text-center">Aquí, el poder no reside en el que manda.<br/>
+            Sino en el que demuestra.</p>
+          </div>
+        </Card>
+
+        <Card className="p-8 mb-12">
+          <h2 className="text-3xl font-bold mb-8 text-center">🏛️ EL TEMPLO DIGITAL HA COMENZADO</h2>
+          
+          <div className="prose prose-invert max-w-none">
+            <p className="mb-4">Este es el primer ladrillo.<br/>
+            El primero de los códices.<br/>
+            La primera forma visible de algo que siempre estuvo latiendo.</p>
             
-            <div className="border-l-4 border-purple-500 pl-4 py-2">
-              <h3 className="text-lg font-medium mb-2">Pruebas de Penetración Éticas</h3>
-              <p className="text-muted-foreground">
-                Evaluación regular por expertos en seguridad independientes, simulación de escenarios de ataque avanzados, y publicación de resultados y medidas correctivas.
-              </p>
-            </div>
+            <p className="text-xl font-medium text-center mt-8">Bienvenido a OPUS INCÓGNITA.<br/>
+            Aquí comienza la soberanía digital.</p>
           </div>
         </Card>
 
         <div className="flex justify-center space-x-4">
           <Button 
-            onClick={() => router.push('/arquitectura')}
+            onClick={() => router.push('/vision')}
           >
-            Ver Arquitectura Completa
+            Explorar Visión
           </Button>
           <Button 
-            onClick={() => router.push('/documentacion')}
+            onClick={() => router.push('/arquitectura')}
           >
-            Explorar Documentación
+            Ver Arquitectura
           </Button>
         </div>
       </div>
