@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { useRouter } from 'next/navigation'
 
-export default function Kernos() {
+export default function IAResidente() {
   const router = useRouter()
 
   return (
@@ -18,162 +18,192 @@ export default function Kernos() {
         </Button>
 
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold tracking-tight mb-4">KERNOS BÁSICO</h1>
+          <h1 className="text-4xl font-bold tracking-tight mb-4">IA Residente (NOUS)</h1>
           <p className="text-xl text-muted-foreground">
-            Sistema de apuestas enfrentadas sobre la verdad basado en blockchain
+            Modelos de IA ligeros pero potentes que gobiernan el sistema operativo
           </p>
         </div>
 
         <Card className="p-6 mb-8">
           <h2 className="text-2xl font-semibold mb-4">Visión General</h2>
           <p className="text-muted-foreground mb-4">
-            El módulo KERNOS BÁSICO implementa un sistema de apuestas enfrentadas sobre la verdad, donde dos posturas arriesgan valor en torno a una afirmación, y el resultado se registra de forma inmutable, anónima y verificable. Este sistema permite verificar la verdad de afirmaciones o contratos mediante un mecanismo de justicia algorítmica sin jueces externos.
+            La capa de IA Residente (NOUS) alberga la inteligencia artificial generativa que gobierna el sistema operativo OPUS INCÓGNITA. Está diseñada para funcionar completamente en el dispositivo local, sin dependencias de servicios en la nube, utilizando modelos ligeros pero potentes que pueden ejecutarse en hardware accesible para empresas medianas, pequeñas y particulares.
           </p>
         </Card>
 
         <Card className="p-6 mb-8">
-          <h2 className="text-2xl font-semibold mb-4">Arquitectura del Módulo KERNOS</h2>
+          <h2 className="text-2xl font-semibold mb-4">Arquitectura Híbrida de Modelos</h2>
+          <p className="text-muted-foreground mb-6">
+            Para garantizar que OPUS INCÓGNITA sea accesible para diferentes tipos de usuarios con distintas capacidades de hardware, se implementa una arquitectura híbrida de modelos de IA:
+          </p>
+
+          <div className="space-y-6">
+            <div className="border rounded-lg p-4">
+              <h3 className="text-lg font-medium mb-2">Modelo Base (1-3B parámetros)</h3>
+              <ul className="list-disc ml-6 space-y-1 text-muted-foreground">
+                <li><span className="font-medium">Opciones:</span> Llama 3.2 1B, Llama 3.2 3B</li>
+                <li><span className="font-medium">Funciones:</span> Comandos básicos, asistencia simple, gestión de tareas rutinarias</li>
+                <li><span className="font-medium">Requisitos:</span> Mínimos, funciona en hardware básico sin GPU</li>
+              </ul>
+            </div>
+
+            <div className="border rounded-lg p-4">
+              <h3 className="text-lg font-medium mb-2">Modelo Principal (7-8B parámetros)</h3>
+              <ul className="list-disc ml-6 space-y-1 text-muted-foreground">
+                <li><span className="font-medium">Opciones:</span> Phi-3-small (7B), Gemma 7B, Llama 3 8B</li>
+                <li><span className="font-medium">Funciones:</span> Asistencia avanzada, análisis de seguridad, gestión del sistema</li>
+                <li><span className="font-medium">Requisitos:</span> Moderados, funciona en hardware de gama media</li>
+              </ul>
+            </div>
+
+            <div className="border rounded-lg p-4">
+              <h3 className="text-lg font-medium mb-2">Modelo Avanzado (opcional, 14B parámetros)</h3>
+              <ul className="list-disc ml-6 space-y-1 text-muted-foreground">
+                <li><span className="font-medium">Opciones:</span> Phi-3-medium (14B)</li>
+                <li><span className="font-medium">Funciones:</span> Razonamiento complejo, análisis avanzado, tareas especializadas</li>
+                <li><span className="font-medium">Requisitos:</span> Elevados, recomendado para hardware de gama alta</li>
+              </ul>
+            </div>
+          </div>
+        </Card>
+
+        <Card className="p-6 mb-8">
+          <h2 className="text-2xl font-semibold mb-4">Técnicas de Optimización</h2>
+          <p className="text-muted-foreground mb-4">
+            Para maximizar el rendimiento en hardware limitado, se implementan diversas técnicas de optimización:
+          </p>
+
+          <ul className="list-disc ml-6 space-y-2 text-muted-foreground">
+            <li>
+              <span className="font-medium">Cuantificación:</span> Conversión a formatos de menor precisión (INT8, INT4) para reducir requisitos de memoria
+            </li>
+            <li>
+              <span className="font-medium">Poda de Modelos:</span> Eliminación de parámetros redundantes para reducir el tamaño sin afectar significativamente el rendimiento
+            </li>
+            <li>
+              <span className="font-medium">Inferencia por Lotes:</span> Procesamiento eficiente de múltiples solicitudes para optimizar el uso de recursos
+            </li>
+            <li>
+              <span className="font-medium">Caché de Resultados:</span> Almacenamiento de respuestas frecuentes para evitar cálculos repetitivos
+            </li>
+            <li>
+              <span className="font-medium">Computación Adaptativa:</span> Ajuste dinámico de recursos según la complejidad de la tarea
+            </li>
+          </ul>
+        </Card>
+
+        <Card className="p-6 mb-8">
+          <h2 className="text-2xl font-semibold mb-4">Componentes Principales</h2>
           
           <div className="space-y-6">
             <div>
-              <h3 className="text-lg font-medium mb-2">Componentes Principales</h3>
-              <ul className="list-disc ml-6 space-y-2 text-muted-foreground">
-                <li>
-                  <span className="font-medium">Blockchain Subnet:</span> Red blockchain específica para el sistema de verificación
-                </li>
-                <li>
-                  <span className="font-medium">Contratos Inteligentes de Verificación:</span> Lógica para gestionar apuestas y resoluciones
-                </li>
-                <li>
-                  <span className="font-medium">Token KERN:</span> Representación de valor y reputación en el sistema
-                </li>
-                <li>
-                  <span className="font-medium">Sistema de Identidad Cifrada:</span> Mecanismo para participar manteniendo privacidad
-                </li>
-                <li>
-                  <span className="font-medium">Oráculos Verificadores:</span> Fuentes externas de información para resolución
-                </li>
-              </ul>
+              <h3 className="text-lg font-medium mb-2">Motor de IA Modular</h3>
+              <p className="text-muted-foreground ml-4">
+                Sistema inteligente que selecciona el modelo adecuado según la tarea, permitiendo un equilibrio óptimo entre rendimiento y eficiencia. Puede cargar y descargar modelos dinámicamente según las necesidades.
+              </p>
             </div>
             
             <div>
-              <h3 className="text-lg font-medium mb-2">Flujo de Verificación</h3>
-              <ol className="list-decimal ml-6 space-y-2 text-muted-foreground">
-                <li>
-                  <span className="font-medium">Creación de Afirmación:</span> Un usuario formula una afirmación verificable
-                </li>
-                <li>
-                  <span className="font-medium">Establecimiento de Apuestas:</span> Usuarios toman posiciones a favor o en contra
-                </li>
-                <li>
-                  <span className="font-medium">Período de Verificación:</span> Recopilación de evidencias y argumentos
-                </li>
-                <li>
-                  <span className="font-medium">Resolución:</span> Determinación del resultado mediante consenso u oráculos
-                </li>
-                <li>
-                  <span className="font-medium">Distribución:</span> Asignación de tokens según el resultado
-                </li>
-              </ol>
-            </div>
-          </div>
-        </Card>
-
-        <Card className="p-6 mb-8">
-          <h2 className="text-2xl font-semibold mb-4">Tecnología Blockchain Recomendada</h2>
-          
-          <p className="text-muted-foreground mb-6">
-            Tras analizar diversas tecnologías blockchain, se recomienda <span className="font-medium">Avalanche Subnet</span> como la opción más adecuada para implementar el módulo KERNOS BÁSICO.
-          </p>
-
-          <div className="space-y-4">
-            <div className="border rounded-lg p-4">
-              <h3 className="text-lg font-medium mb-2">Criterios de Selección</h3>
-              <ul className="list-disc ml-6 space-y-1 text-muted-foreground">
-                <li><span className="font-medium">Baja latencia y costes reducidos:</span> Velocidad de procesamiento y minimización o eliminación de costes de gas</li>
-                <li><span className="font-medium">Soporte para smart contracts avanzados:</span> Capacidad para implementar lógica compleja de verificación y apuestas</li>
-                <li><span className="font-medium">Posibilidad de tokens propios:</span> Creación del token KERN para representar valor y reputación</li>
-                <li><span className="font-medium">Mecanismo de identidad cifrada:</span> Identidades que puedan revelarse voluntariamente</li>
-                <li><span className="font-medium">Gobernanza criptográfica:</span> Capacidad para implementar sistemas de gobernanza dentro del sistema</li>
-                <li><span className="font-medium">Privacidad selectiva:</span> Opcionalidad de privacidad total o selectiva en cada interacción</li>
-              </ul>
-            </div>
-
-            <div className="border rounded-lg p-4">
-              <h3 className="text-lg font-medium mb-2">Ventajas de Avalanche Subnet</h3>
-              <ul className="list-disc ml-6 space-y-1 text-muted-foreground">
-                <li><span className="font-medium">Velocidad excepcional:</span> Finalidad de transacciones en menos de 2 segundos</li>
-                <li><span className="font-medium">Subnets personalizables:</span> Estructura de tarifas flexible con posibilidad de eliminar costes de gas</li>
-                <li><span className="font-medium">Privacidad configurable:</span> Opciones de privacidad a nivel de protocolo</li>
-                <li><span className="font-medium">Excelente control:</span> Control sobre validadores y parámetros de la red</li>
-                <li><span className="font-medium">Escalabilidad:</span> Capacidad para manejar miles de transacciones por segundo</li>
-                <li><span className="font-medium">Interoperabilidad:</span> Posibilidad de conectar con otras redes y sistemas</li>
-              </ul>
-            </div>
-          </div>
-        </Card>
-
-        <Card className="p-6 mb-8">
-          <h2 className="text-2xl font-semibold mb-4">Implementación Híbrida Propuesta</h2>
-          
-          <p className="text-muted-foreground mb-6">
-            Se recomienda una estrategia de implementación en fases para el módulo KERNOS BÁSICO:
-          </p>
-
-          <div className="space-y-4">
-            <div className="border-l-4 border-blue-500 pl-4 py-2">
-              <h3 className="text-lg font-medium mb-2">Fase 1: Implementación inicial con Avalanche Subnet</h3>
-              <p className="text-muted-foreground">
-                Desarrollo de una Subnet personalizada en Avalanche con eliminación de costes de gas, privacidad configurable y soporte para el token KERN. Esta fase permite una implementación rápida con un excelente balance entre personalización, rendimiento y tiempo de desarrollo.
+              <h3 className="text-lg font-medium mb-2">Subsistema de Inferencia Local</h3>
+              <p className="text-muted-foreground ml-4">
+                Toda la inferencia se realiza en el dispositivo del usuario, sin enviar datos a servidores externos. Utiliza frameworks optimizados como ONNX Runtime o TensorRT para maximizar el rendimiento.
               </p>
             </div>
             
-            <div className="border-l-4 border-green-500 pl-4 py-2">
-              <h3 className="text-lg font-medium mb-2">Fase 2: Expansión con interoperabilidad</h3>
-              <p className="text-muted-foreground">
-                Adición de capacidades de interoperabilidad para conectar con otras redes blockchain, posiblemente utilizando puentes a Polygon para aprovechar su ecosistema y liquidez. Esto amplía las posibilidades del sistema sin comprometer sus características fundamentales.
+            <div>
+              <h3 className="text-lg font-medium mb-2">Gestor de Contexto y Memoria</h3>
+              <p className="text-muted-foreground ml-4">
+                Mantiene el estado y conocimiento del sistema, permitiendo a la IA recordar interacciones previas y aprender de ellas. Implementa técnicas de gestión de memoria para optimizar el uso de recursos.
               </p>
             </div>
             
-            <div className="border-l-4 border-purple-500 pl-4 py-2">
-              <h3 className="text-lg font-medium mb-2">Fase 3: Posible migración a solución soberana</h3>
-              <p className="text-muted-foreground">
-                A medida que el sistema madure y los requisitos se vuelvan más específicos, se podría considerar una migración gradual hacia una solución basada en Cosmos SDK o Substrate, manteniendo la interoperabilidad con las fases anteriores. Esta fase es opcional y dependería de la evolución del proyecto.
+            <div>
+              <h3 className="text-lg font-medium mb-2">Interfaz de Comunicación Multimodal</h3>
+              <p className="text-muted-foreground ml-4">
+                Permite la interacción con el sistema mediante texto, voz e imágenes, adaptándose a las preferencias del usuario y al contexto de uso.
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="text-lg font-medium mb-2">Sistema de Aprendizaje Continuo</h3>
+              <p className="text-muted-foreground ml-4">
+                Mejora adaptativa basada en interacciones con el usuario, respetando la privacidad mediante técnicas como el aprendizaje federado con privacidad diferencial.
               </p>
             </div>
           </div>
         </Card>
 
         <Card className="p-6 mb-8">
-          <h2 className="text-2xl font-semibold mb-4">Casos de Uso</h2>
+          <h2 className="text-2xl font-semibold mb-4">Casos de Uso de la IA en el Sistema</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="border rounded-lg p-4">
-              <h3 className="text-lg font-medium mb-2">Verificación de Afirmaciones Factuales</h3>
-              <p className="text-muted-foreground">
-                Permite verificar la veracidad de afirmaciones sobre hechos concretos mediante un sistema de apuestas donde los participantes arriesgan valor basándose en su confianza en la veracidad o falsedad de la afirmación.
-              </p>
+              <h3 className="text-lg font-medium mb-2">Gestión del Sistema</h3>
+              <ul className="list-disc ml-6 space-y-1 text-muted-foreground">
+                <li>Optimización automática de recursos</li>
+                <li>Detección y resolución de problemas</li>
+                <li>Actualizaciones inteligentes basadas en patrones de uso</li>
+              </ul>
             </div>
             
             <div className="border rounded-lg p-4">
-              <h3 className="text-lg font-medium mb-2">Resolución de Disputas Contractuales</h3>
-              <p className="text-muted-foreground">
-                Proporciona un mecanismo para resolver disputas sobre el cumplimiento de contratos sin necesidad de intermediarios, utilizando oráculos y evidencias verificables.
-              </p>
+              <h3 className="text-lg font-medium mb-2">Seguridad Adaptativa</h3>
+              <ul className="list-disc ml-6 space-y-1 text-muted-foreground">
+                <li>Análisis de comportamientos anómalos</li>
+                <li>Respuesta automatizada a amenazas</li>
+                <li>Verificación continua de integridad</li>
+              </ul>
             </div>
             
             <div className="border rounded-lg p-4">
-              <h3 className="text-lg font-medium mb-2">Validación de Información</h3>
-              <p className="text-muted-foreground">
-                Permite validar la autenticidad y precisión de información mediante un proceso descentralizado donde múltiples partes pueden aportar evidencias y verificar datos.
-              </p>
+              <h3 className="text-lg font-medium mb-2">Interfaz Conversacional</h3>
+              <ul className="list-disc ml-6 space-y-1 text-muted-foreground">
+                <li>Interacción natural con el sistema</li>
+                <li>Asistencia contextual basada en actividades</li>
+                <li>Automatización de tareas complejas</li>
+              </ul>
             </div>
             
             <div className="border rounded-lg p-4">
-              <h3 className="text-lg font-medium mb-2">Sistemas de Reputación</h3>
-              <p className="text-muted-foreground">
-                El historial de participación en verificaciones exitosas construye un sistema de reputación basado en el token KERN, que puede utilizarse como indicador de confiabilidad en el sistema.
-              </p>
+              <h3 className="text-lg font-medium mb-2">Personalización Avanzada</h3>
+              <ul className="list-disc ml-6 space-y-1 text-muted-foreground">
+                <li>Adaptación de la interfaz según preferencias</li>
+                <li>Anticipación de necesidades del usuario</li>
+                <li>Optimización de flujos de trabajo</li>
+              </ul>
+            </div>
+          </div>
+        </Card>
+
+        <Card className="p-6 mb-8">
+          <h2 className="text-2xl font-semibold mb-4">Requisitos de Hardware</h2>
+          
+          <div className="space-y-6">
+            <div className="border rounded-lg p-4">
+              <h3 className="text-lg font-medium mb-2">Configuración Básica</h3>
+              <ul className="list-disc ml-6 space-y-1 text-muted-foreground">
+                <li><span className="font-medium">CPU:</span> 4+ núcleos, arquitectura x86-64 o ARM64 moderno</li>
+                <li><span className="font-medium">RAM:</span> 8-16 GB</li>
+                <li><span className="font-medium">GPU:</span> Opcional, pero recomendado para mejor rendimiento (2GB+ VRAM)</li>
+              </ul>
+            </div>
+            
+            <div className="border rounded-lg p-4">
+              <h3 className="text-lg font-medium mb-2">Configuración Recomendada</h3>
+              <ul className="list-disc ml-6 space-y-1 text-muted-foreground">
+                <li><span className="font-medium">CPU:</span> 6-8 núcleos, arquitectura x86-64 o ARM64 moderno</li>
+                <li><span className="font-medium">RAM:</span> 16-32 GB</li>
+                <li><span className="font-medium">GPU:</span> 4GB+ VRAM para aceleración de IA</li>
+              </ul>
+            </div>
+            
+            <div className="border rounded-lg p-4">
+              <h3 className="text-lg font-medium mb-2">Configuración Avanzada</h3>
+              <ul className="list-disc ml-6 space-y-1 text-muted-foreground">
+                <li><span className="font-medium">CPU:</span> 8+ núcleos, arquitectura x86-64 moderno</li>
+                <li><span className="font-medium">RAM:</span> 32+ GB</li>
+                <li><span className="font-medium">GPU:</span> 8GB+ VRAM para modelos de IA más avanzados</li>
+              </ul>
             </div>
           </div>
         </Card>
@@ -185,9 +215,9 @@ export default function Kernos() {
             Ver Arquitectura Completa
           </Button>
           <Button 
-            onClick={() => router.push('/seguridad')}
+            onClick={() => router.push('/kernos')}
           >
-            Explorar Seguridad Sin Vigilancia
+            Explorar KERNOS BÁSICO
           </Button>
         </div>
       </div>
